@@ -20,17 +20,15 @@
              height: 150px;
          }
          .identity{
-             font-family:cursive;
              font-size: large;
              text-align: center;
          }
-         .identity:hover{
-             color:aquamarine;
-        }
          .a{
-             font-style: italic;
+             background-color: blueviolet;
+             border: 5px solid blueviolet;
+             border-radius: 30px;
              font-size: large;
-             font-weight: bolder;
+             font-weight: bold;
          }
          .c{
              border: 2px solid black;
@@ -54,21 +52,47 @@
              padding-left: 5px;
              text-align: center;
          }
-
+         .f:hover{
+             font-style: italic;
+             font-size: 25px;
+             font-family: cursive;
+         }
+         .potato{
+             margin-left: 39.7%;
+         }
+         .potato1{
+             margin-left: 38.4%;
+         }
+         .zero{
+             font-size: 20px;
+             margin-left: 45%;
+         }
+         .f{
+             background-color: yellowgreen;
+             border: 5px solid yellowgreen;
+             border-radius: 30px;
+         }
+         .h:focus{
+            font-size: larger;
+         }
+         h1:hover{
+             font-size: 35px;
+             font-family:cursive;
+         }
         </style>
     </head>
     <body>
         <h1>BIOGRAPHY</h1>
         <img src="218766614_2660623094229992_903499572371054240_n.jpg" alt="" id="zubayer">
-        <p class="identity"> <span class="a">Name :</span> Mahmudul Hasan Zubayer</p>
-        <p class="identity"> <span class="a">Occupation: </span>Student</p>
-        <p class="identity"><span class="a">Age :</span> 20</p>
+        <p class="identity"> <span class="a">Name</span> : <span class="f">Mahmudul Hasan Zubayer</span></p>
+        <p class="identity"> <span class="a">Occupation</span> : <span class="f">Student</span></p>
+        <p class="identity"><span class="a">Age</span> : <span class="f">20</span></p>
         <P class="c">Hsc-5</P>
         <P class="d">Ssc-5</P>
         <P class="d">Jsc-5</P>
         <P class="e">Psc-5</P>
-        <input type="text">
-        <br>
-        <input type="text">
+        <p class="zero">Contact me</p>
+        <p class="potato">Email : <input class="h" type="text"></p>
+        <p class="potato1">Message : <input class="h" type="text"></p>
     </body>
 </html>
