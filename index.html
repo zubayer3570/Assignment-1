@@ -2,14 +2,19 @@
     <head>
         <title>BIOGRAPHY</title>
         <style>
+            body{
+                background-color: darkgray;
+            }
             h1{
                 color: rgb(58, 4, 4);
                 text-align: center;
                 border: 1px solid #85dad5;
+                width: 250px;
                 border-radius: 30px;
-                margin: 1% 41%;
                 background-color: #85dad5;
                 font-family:serif;
+                margin-left: auto;
+                margin-right: auto;
          }
          #zubayer{
              display: block;
@@ -25,32 +30,11 @@
          }
          .a{
              background-color: blueviolet;
-             border: 5px solid blueviolet;
+             border: 6px solid blueviolet;
+             width: 50px;
              border-radius: 30px;
              font-size: large;
              font-weight: bold;
-         }
-         .c{
-             border: 2px solid black;
-             border-top-left-radius: 5px;
-             border-top-right-radius: 5px;
-             margin: 0% 45%;
-             padding-left: 5px;
-             text-align: center;   
-         }
-         .e{
-             border: 2px solid black;
-             border-bottom-left-radius: 5px;
-             border-bottom-right-radius: 5px;
-             margin: 0% 45%;
-             padding-left: 5px;
-             text-align: center;
-         }
-         .d{
-            border: 2px solid black;
-             margin: 0% 45%;
-             padding-left: 5px;
-             text-align: center;
          }
          .f:hover{
              font-style: italic;
@@ -58,18 +42,30 @@
              font-family: cursive;
          }
          .potato{
-             margin-left: 39.7%;
+             text-align: right;
+             margin-right: 43%;
+             color: white;
+             font-size: medium;
          }
-         .potato1{
-             margin-left: 38.4%;
+         .inpotato{
+             border: 5px solid #040474fb;
+             border-radius: 30px;
+             background-color: #040474fb;
          }
          .zero{
+             color: white;
              font-size: 20px;
-             margin-left: 45%;
+             text-align: center;
+             border: 1px solid #040474fb;
+             width: 100px;
+             border-radius: 30px;
+             background-color:#040474fb;
+             margin-left: auto;
+             margin-right: auto;
          }
          .f{
              background-color: yellowgreen;
-             border: 5px solid yellowgreen;
+             border: 6px solid yellowgreen;
              border-radius: 30px;
          }
          .h:focus{
@@ -79,20 +75,44 @@
              font-size: 35px;
              font-family:cursive;
          }
+         table, th, td{
+             border: 1px solid black;
+             border-collapse: collapse;
+             text-align: center;
+             font-weight: 700;
+         }
+         table{
+             margin-left: auto;
+             margin-right: auto;
+         }
         </style>
     </head>
     <body>
         <h1>BIOGRAPHY</h1>
-        <img src="218766614_2660623094229992_903499572371054240_n.jpg" alt="" id="zubayer">
+        <img src="https://scontent.fdac11-1.fna.fbcdn.net/v/t39.30808-6/218766614_2660623094229992_903499572371054240_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeE5V4LpPoYAPNxEdF7N76T1O1PR5kBxFVA7U9HmQHEVUEQAwL7Qi23Vc1dftZPRmmCHZ18FoO_DlrdKAQBGURpV&_nc_ohc=YLxlnE03Al0AX-CMTLD&_nc_ht=scontent.fdac11-1.fna&oh=18432f05f51015abb82b4057e0ef8f32&oe=61983AF9" alt="" id="zubayer">
         <p class="identity"> <span class="a">Name</span> : <span class="f">Mahmudul Hasan Zubayer</span></p>
         <p class="identity"> <span class="a">Occupation</span> : <span class="f">Student</span></p>
         <p class="identity"><span class="a">Age</span> : <span class="f">20</span></p>
-        <P class="c">Hsc-5</P>
-        <P class="d">Ssc-5</P>
-        <P class="d">Jsc-5</P>
-        <P class="e">Psc-5</P>
+        <table>
+            <tr>
+                <th>Exam</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Hsc</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Ssc</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Jsc</td>
+                <td>5</td>
+            </tr>
+        </table>
         <p class="zero">Contact me</p>
-        <p class="potato">Email : <input class="h" type="text"></p>
-        <p class="potato1">Message : <input class="h" type="text"></p>
+        <p class="potato"><span class="inpotato">Email</span> : <input class="h" type="text"></p>
+        <p class="potato"><span class="inpotato">Message</span> : <input class="h" type="text"></p>
     </body>
 </html>
