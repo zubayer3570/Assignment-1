@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            height: 500px;
+            background-color: lightskyblue;
+        }
+        .stage{
+            
+        }
+        .block{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+        }
+        @keyframes testing_steps {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 900px;
+            }
+        }
+        body:hover .block{
+            animation: testing_steps 60s linear 0s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="block"></div>
+    </div>
+</body>
+</html>
