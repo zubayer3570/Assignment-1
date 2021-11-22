@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        .stage{
+            height: 500px;
+            width: 1000px;
             background-color: aqua;
         }
         .walking {
@@ -14,8 +16,8 @@
             width: 75px;
             background: url(capguy-walk.png);
             position: absolute;
-            top: 324px;
-            left: 40%;
+            top: 200px;
+            left: 425px;
         }
         body:hover .walking{
             animation: capguy 0.7s steps(8) 0s infinite;
@@ -26,65 +28,35 @@
             width: 300px;
             background-color: aqua;
             position: absolute;
-            top: 453px;
-            left: 137px;
+            top: 327px;
+            left: 30px;
         }
         .hiding_road2{
             height: 20px;
             width: 300px;
             background-color: aqua;
             position: absolute;
-            top: 453px;
-            left: 53.9%;
+            top: 327px;
+            left: 630px;
         }
-        .road_block_1{
+        .road_block{
             display: flex;
             position: absolute;
-            top: 453px;
-            left: 32%;
+            top: 327px;
+            left: 330px;
         }
-        .road_block_2{
-            display: flex;
-            position: absolute;
-            top: 453px;
-            left: 53.9%;
-        }
-        .road1{
-            height: 20px;
-            width: 50px;
+        .roadgreen{
             background-color: green;
-        }
-        .road2{
             height: 20px;
             width: 50px;
+        }
+        .roadgreenyellow{
             background-color: greenyellow;
-        }
-        .road3{
             height: 20px;
             width: 50px;
-            background-color: green;
         }
-        .road4{
-            height: 20px;
-            width: 50px;
-            background-color: greenyellow;
-        }
-        .road5{
-            height: 20px;
-            width: 50px;
-            background-color: green;
-        }
-        .road6{
-            height: 20px;
-            width: 50px;
-            background-color: greenyellow;
-        }
-
-        body:hover .road_block_1{
-            animation: dream1 3.5s linear 0s infinite;
-        }
-        body:hover .road_block_2{
-            animation: dream2 3.5s linear 0s infinite;
+        .stage:hover .road_block{
+            animation: road 3s linear 0s infinite;
         }
         @keyframes capguy {
             0%{
@@ -94,43 +66,34 @@
                background-position: 0px;
             }
         }
-        @keyframes dream1 {
+        @keyframes road {
             0%{
-                left: 437px;
+                left: 330px;
             }
             100%{
-                left: 137px;
-            }
-        }
-        @keyframes dream2 {
-            0%{
-                left: 737px;
-            }
-            100%{
-                left: 437px;
+                left: 30px;
             }
         }
     </style>
 </head>
 <body>
+    <div class="stage">
         <div class="walking"></div>
-            <div class="road_block_1">
-            <div class="road1"></div>
-            <div class="road2"></div>
-            <div class="road3"></div>
-            <div class="road4"></div>
-            <div class="road5"></div>
-            <div class="road6"></div>
-        </div>
-        <div class="road_block_2">
-            <div class="road1"></div>
-            <div class="road2"></div>
-            <div class="road3"></div>
-            <div class="road4"></div>
-            <div class="road5"></div>
-            <div class="road6"></div>
+            <div class="road_block">
+            <div class="roadgreen"></div>
+            <div class="roadgreenyellow"></div>
+            <div class="roadgreen"></div>
+            <div class="roadgreenyellow"></div>
+            <div class="roadgreen"></div>
+            <div class="roadgreenyellow"></div>
+            <div class="roadgreen"></div>
+            <div class="roadgreenyellow"></div>
+            <div class="roadgreen"></div>
+            <div class="roadgreenyellow"></div>
+            <div class="roadgreen"></div>
         </div>
         <div class="hiding_road1"></div>
         <div class="hiding_road2"></div>
+    </div>
 </body>
 </html>
