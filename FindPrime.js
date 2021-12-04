@@ -1,11 +1,8 @@
-function FindPrime(r){
+function FindPrime(n){
     var array = []
-function prime(n){
     for(i=2; i<=n; i++){
         array.push(i)
     }
-}
-prime(r)
 for(x=0; x<array.length; x++){
     element = array[x]
     function primechecker(element){
@@ -17,7 +14,6 @@ for(x=0; x<array.length; x++){
         }
         return 1
     }
-    var ultimate = primechecker(element)
     if(primechecker(element)==1){
         console.log(element)
     }
