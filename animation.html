@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Web Development</title>
     <style>
+        .background{
+            height: 500px;
+            width: 1000px;
+            background-color: white;
+            position: absolute;
+        }
+        p{
+            position: absolute;
+            font-size: 100px;
+            left: 23%;
+            top: 15%;
+            color: red;
+            font-family: serif;
+        }
         .stage{
             height: 500px;
             width: 1000px;
             background-color: lightskyblue;
+            position: absolute;
         }
         .ball1{
             background-color: rgb(19, 19, 87);
@@ -82,34 +97,43 @@
             }
         }
         .stage:hover .ball1{
-             animation: ball_drop 3s linear 0.5s infinite;
+             animation: ball_drop 6s linear 0.5s infinite;
 
         }
         .stage:hover .ball2{
-            animation: ball_drop 3s linear 1s infinite ;
+            animation: ball_drop 6s linear 1s infinite ;
         }
         .stage:hover .ball3{
-             animation: ball_drop 3s linear 1.5s infinite;
+             animation: ball_drop 6s linear 1.5s infinite;
         }
         .stage:hover .ball4{
-            animation: ball_drop 3s linear 2s infinite;
+            animation: ball_drop 6s linear 2s infinite;
         }
         .stage:hover .ball5{
-             animation: ball_drop 3s linear 2.5s infinite;
+             animation: ball_drop 6s linear 2.5s infinite;
         }
         .stage:hover .ball6{
-            animation: ball_drop 3s linear 3s infinite;
+            animation: ball_drop 6s linear 3s infinite;
         }
     </style>
 </head>
 <body>
-    <div class="stage">
-         <div class="ball1"></div>
-        <div class="ball2"></div>
-        <div class="ball3"></div>
-        <div class="ball4"></div>
-        <div class="ball5"></div>
-        <div class="ball6"></div>
+    <div class="background">
+        <p class="game-over">You Noob😂</p>
+        <div class="stage">
+            <div class="ball1"></div>
+            <div class="ball2"></div>
+            <div class="ball3"></div>
+            <div class="ball4"></div>
+            <div class="ball5"></div>
+            <div class="ball6"></div>
+        </div>
     </div>
+    
+    <script>
+        document.addEventListener('click', function(){
+            event.target.parentNode.removeChild(event.target)
+        })
+    </script>
 </body>
 </html>
