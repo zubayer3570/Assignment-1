@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock-background{
+            height: 204px;
+            width: 204px;
+            background-color: aqua;
+            border: aqua solid 2px;
+            outline: black solid 2px;
+            border-radius: 50%;
+        }
+        .dot{
+            height: 5px;
+            width: 5px;
+            background-color: black;
+            border: black solid 2.5px;
+            border-radius: 50%;
+            position: absolute;
+            left: 105px;
+            top: 100px;
+        }
+        .bar-second{
+            height: 80px;
+            width: 2px;
+            background-color: black;
+            position: absolute;
+            left: 109px;
+            top: 25px;
+        }
+        .bar-minute{
+            height: 50px;
+            width: 2px;
+            background-color: black;
+            position: absolute;
+            left: 109px;
+            top: 55px;
+        }
+        .bar-hour{
+            height: 30px;
+            width: 2px;
+            background-color: black;
+            position: absolute;
+            left: 109px;
+            top: 75px;
+        }
+
+        .clock-background:hover .bar-second{
+            animation: clock-animation 60s steps(60) 0s infinite;
+            transform-origin: 50% 100%;
+
+        }
+        .clock-background:hover .bar-minute{
+            animation: clock-animation 3600s linear 0s infinite;
+            transform-origin: 50% 100%;
+        }
+        .clock-background:hover .bar-hour{
+            animation: clock-animation 86400s linear 0s infinite;
+            transform-origin: 50% 100%;
+        }
+        @keyframes clock-animation {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .a{
+            font-size: 15px;
+            font-weight: bolder;
+            font-family: cursive;
+            position: absolute;
+        }
+
+        .num12{
+            left: 102.25px;
+            
+        }
+
+        .num3{
+            left: 200px;
+            top: 98px;
+        }
+        .num6{
+            left: 107.5px;
+            top: 193px;
+        }
+        .num9{
+            left: 15px;
+            top: 98px;
+        }
+        .num1{
+            left: 150px;
+            top: 20px;
+        }
+        .num2{
+            left: 185px;
+            top: 50px;
+        }
+        .num5{
+            left: 150px;
+            top: 180px;
+        }
+        .num4{
+            left: 185px;
+            top: 147px;
+        }
+        .num7{
+            left: 60px;
+            top: 180px;
+        }
+        .num8{
+            left: 30px;
+            top: 147px;
+        }
+        .num11{
+            left: 60px;
+            top: 23px;
+        }
+        .num10{
+            left: 25px;
+            top: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-background">
+        <div class="dot"></div>
+
+        <div class="bar-second"></div>
+        <div class="bar-minute"></div>
+        <div class="bar-hour"></div>
+
+        <div class="num1 a">1</div>
+        <div class="num2 a">2</div>
+        <div class="num3 a">3</div>
+        <div class="num4 a">4</div>
+        <div class="num5 a">5</div>
+        <div class="num6 a">6</div>
+        <div class="num7 a">7</div>
+        <div class="num8 a">8</div>
+        <div class="num9 a">9</div>
+        <div class="num10 a">10</div>
+        <div class="num11 a">11</div>
+        <div class="num12 a">12</div>
+    </div>
+</body>
+</html>
